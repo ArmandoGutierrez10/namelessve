@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nameless | Presupuesto </title>
+</head>
+
+<body>
+    <nav>
+        <p class="logo">nameless</p>
+        <ul>
+            <li class="link">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="link">
+                <a href="./products.html">Products</a>
+            </li>
+            <li class="link">
+                <a href="./contacto.html">Contact</a>
+            </li>
+            <li class="link">
+                <a href="#">Presupuesto</a>
+            </li>
+        </ul>
+    </nav>
+<main class="main-presupuesto">
+
+    <form class="formulario" action="/submit_form" method="post">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="text" name="phone" placeholder="Teléfono" required>
+        <textarea name="message" placeholder="Mensaje"></textarea>
+        <label><input type="checkbox" name="agree" required> Acepto los términos y condiciones</label>
+        <input type="submit" value="Enviar">
+    </form>
+
+</main>
+    
+
+</body>
+
+</html>

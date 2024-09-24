@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "nameles";
+    src: url(../assets/fonts/KLORE-DEMO.ttf);
+
+}
+
+@keyframes btn-up {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/***********************************************************************************************************************************************************
+********************************************************NAV BAR*********************************************************************************************
+***********************************************************************************************************************************************************/
+
+.logo {
+    font-family: "nameles";
+    color: black;
+    font-size: x-large;
+}
+
+nav {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav ul {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.1s ease-in-out;
+}
+
+.link:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+    color: blueviolet;
+}
+
+
+
+
+
+
+/***********************************************************************************************************************************************************
+********************************************************PRINCIPAL*********************************************************************************************
+***********************************************************************************************************************************************************/
+
+.principalint {
+    height: 100vh;
+    width: 100%;
+}
+
+.titulo-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 50;
+    margin-top: 100px;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 90px;
+    text-indent: 25px;
+}
+
+.presentacion {
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/images/fondo-correct-edit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.titulos-font {
+    font-family: "nameles";
+    font-weight: 100;
+}
+
+/*********************presentacion de productos*********************************/
+
+.presentacion-productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui;
+    font-weight: 50;
+    color: white;
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+}
+
+.breve-main {
+    padding: 30px;
+    font-family: system-ui;
+    color: black;
+    height: 70px;
+    width: 65%;
+}
+
+
+.orden2 {
+    box-sizing: border-box;
+    padding: 0;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    float: left;
+    margin-left: 40px;
+
+}
+
+.main-index{
+    height: 100vh;
+    width: 100%;
+}
+
+.ofertas{
+    display: flex;
+    float: right;
+    width: 20%;
+    height: 94vh;
+    background-color: black;
+    margin-top: 33px;
+    font-family: system-ui;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.div-ofertas{
+    width: 100%;
+    height: 100%;
+}
+
+.ofertas-sup{
+    height: 8%;
+    width: 100%;
+    background-color:rgba(128, 128, 128, 0.336);
+    color: white;
+    border-radius: 5px 0px 0px ;
+    padding: 5px 5px;
+}
+
+.ofertas-title{
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.ofertas-lista{
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.ofertas-lista a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.ofertas-lista a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/***********************************************************************************************************************************************************
+********************************************************SECCION PRODUCTOS*********************************************************************************************
+***********************************************************************************************************************************************************/
+
+body {
+    background-color: rgb(250, 250, 220);
+}
+
+.seccion{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sub-titulos {
+    padding: 30px;
+    font-family: system-ui;
+    color: #fff;
+    width: 100%;
+    background: black
+}
+
+.principal-productos {
+    width: 100%;
+    height: 100vh;
+    margin-right: 60px;
+    margin-top: 10px;
+}
+
+.orden {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.titulo-product {
+    font-family: system-ui;
+}
+
+.container-items {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    height: 300px;
+    margin-top: 35px;
+}
+
+.item {
+    border-radius: 10px;
+    background-color: #f5ead1;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+    border-radius: 10px 10px;
+}
+
+.info-product {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: system-ui;
+}
+
+.info-product button {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton {
+    border-radius: 5px;
+    height: 35px;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************************************************************************************************
+********************************************************FOOTER*********************************************************************************************
+***********************************************************************************************************************************************************/
+
+footer {
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.Contenido-Footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Contenido-Footer h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.Redes-sociales {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.Redes-sociales li {
+    margin: 0 10px;
+}
+
+.Redes-sociales a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.Redes-sociales a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.Redes-sociales a:hover i {
+    color: rgb(27, 136, 173);
+}
+
+.Footer-Final {
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.Footer-Final p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.Footer-Final p a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/***********************************************************************************************************************************************************
+********************************************************SECCION CONTACTO*********************************************************************************************
+***********************************************************************************************************************************************************/
+
+.main-presupuesto{
+    height: 100vh;
+    width: 100%;
+    background: url(../assets/images/hoodie-nameless-white-fondo-edit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    background-color: #ffffff00;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%;
+    padding:10px;
+margin: 10px 0;
+box-sizing: border-box;
+border-radius: 5px;
+outline: none;
+resize: none;
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #091725;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+    border-radius: 5px;
+}
+
+/***********************************************************************************************************************************************************
+********************************************************SECCION CONTACTO*********************************************************************************************
+***********************************************************************************************************************************************************/
+
+.main-contacto{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+.ubicacion{
+    display: flex;
+    float: left;
+    margin-left: 30vh;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 15px;
+    margin-top: 70px;
+}
+
+.datos{
+    font-family: system-ui;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 70px;
+    margin-right: 170px;
+
+}
+
+.datos-texto{
+    margin-top: 30px;
+}
